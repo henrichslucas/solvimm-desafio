@@ -84,12 +84,31 @@ Após isso, é realizado um duplo loop `for`, o primeiro passando a variável `i
 
 Dentro dos dois laços, o valor existente em `i` será transformado em string com `str(i)` para a extração exclusiva do valor numérico, realizada com os `replace`. Durante o loop é implementada a condicional `if(count%2 == 1)`, ou seja, se o valor atual de `count` for ímpar, significa que é um ano, e se for par, significa que é a quantidade de filmes lançados naquele ano. Ao final do loop, count recebe a soma do próprio valor + 1. <br/><br/>
 
+Ao final da celula, é feito um `for` para imprimir os valores os valores de cada array.
 
 <h4>Quinta célula</h4>
 
+Aqui, será obtida a quantidade de filmes com media de avaliação maior ou igual a 4,7, considerando apenas as avaliações da data mais recente.
+
+De início, a variável `lastDate` recebe a consulta `customerData['Date'].sort_values().tail(1).reset_index(drop=True)`, feita no banco de *avaliações*, que retorna a data da ultima avaliação feita, sendo `drop=True` responsável por substituir o index atual por um numérico, facilitando a extração dos dados. Em seguida, `lastDate` é convertido em string com `str(lastDate)` e `recebe split()[1]`, sendo o numero entre colchetes a substring desejada.<br/><br/>
+
+Em seguida, a variável `lastRatings` recebera a consulta `customerData.loc[customerData['Date'] == lastDate]` que irá retornar um dataFrame com todas as colunas e linhas que correspondem ao valor de `lastDate`. Além disso, a variável `lastRatingsQtd` recebera a quantidade de avaliações feitas nessa data com `len(lastRatings)`, e também é declarada a lista `bestR`, que receberá tanto o título quanto a media dos filmes com media acima de 4,7. <br/><br/>
+
+Após isso, um duplo loop `for` é declarado, sendo `n` o contador e o `range(1,lastRatingsQtd)` contando de 1 até o valor equivalente à quantidade de avaliações feitas na última data. Dentro do for, são declaradas as variáveis `r`, a qual recebe a consulta `lastRatings.loc[lastRatings['Movie_Id'] == n]` que retorna um dataFrame com as linhas e colunas onde o `Movie_Id` seja igual ao valor do contador `n`. Em seguida, é realizada a extração do título do filme, convertendo o valor da variável em string e utilizando o `split()` para selecionar o dado desejado. Ao final do loop, os valores de `lastMovieTitle` e `rMean` sao inseridos na lista `bestR`. <br/><br/>
+
+Ao final da célula, é feito um `print()` com o tamanho da lista `bestR`, a qual contém todos os dados filtrados.
+
 <h4>Sexta célula</h4>
+
+Aqui, serão obtidos os filmes com as piores medias das avaliações mais recentes, ainda acima de 4,7. <br/><br/>
+
+Aproveitando a lista `bestR`, a função `sorted()` retorna a ordenação crescente dos dados dessa lista para dentro de uma nova variável chamada `worstLastMovies`.<br/><br/>
+
+Ao fim da célula, o loop `for` realiza a iteração de `worstLastMovies[:10]`, imprimindo os valores a cada ciclo.
+
 
 <h4>Sétima célula</h4>
 
+Aqui, serão obtidos os id's dos clientes que mais fizeram avaliações, juntamente com o número de avaliações feitas por cada um. <br/><br/>
 
 
