@@ -13,7 +13,7 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
 </ul>
 
 <h4>Observações:</h4> 
-A versão disponível na Microsoft Store *não* é compatível com esse projeto. É recomendado o uso da última versão disponível no site oficial acima.<br/>
+A versão disponível na Microsoft Store *não* é compatível com esse projeto.<br/>
 Para instalar o Pandas, abra um console dentro do diretório desse projeto e execute o comando `pip install pandas`.
 
 ### Como executar
@@ -31,8 +31,6 @@ O banco 1 contém informações sobre filmes, como ID, título e ano de lançame
 Baixados os bancos, *é vital movê-los para a pasta em que se localiza o arquivo jupyter baixado anteriormente*.
 
 Abrindo o arquivo `5gFlix.ipynb` no *Visual Studio Code*, basta clicar em `Executar tudo` para compilar as células. Na primeira vez, será necessário selecionar o kernel, então apenas selecione a versão do python mais recente instalada em seu computador, quando a janela surgir. Feito isso, aguarde o processamento dos dados, e os resultados serão mostrados abaixo de cada célula.
-
-
 
 ## Passo a passo
 
