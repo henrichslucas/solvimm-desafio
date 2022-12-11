@@ -11,7 +11,7 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
   <li><a href="https://code.visualstudio.com/download">Visual Studio Code </a> (opcional)</li>
 </ul>
 
-####Observações:#### 
+<h4>Observações:</h4> 
 
 ### Como executar
 
