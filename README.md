@@ -2,8 +2,6 @@
 
 Esse projeto tem como objetivo responder os entregáveis indicados no escopo do desafio.
 
-## Passo a passo
-
 ## Configurações para a execução
 
 ### Pré-requisitos
@@ -26,5 +24,11 @@ O banco 1 contém informações sobre filmes, como ID, título e ano de lançame
 Baixados os bancos, *é vital movê-los para a pasta em que se localiza o arquivo jupyter baixado anteriormente*.
 
 Abra o arquivo `5gFlix.ipynb`
+
+
+
+## Passo a passo
+
+
 
 
