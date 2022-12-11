@@ -106,9 +106,12 @@ Aproveitando a lista `bestR`, a função `sorted()` retorna a ordenação cresce
 
 Ao fim da célula, o loop `for` realiza a iteração de `worstLastMovies[:10]`, imprimindo os valores a cada ciclo.
 
-
 <h4>Sétima célula</h4>
 
 Aqui, serão obtidos os id's dos clientes que mais fizeram avaliações, juntamente com o número de avaliações feitas por cada um. <br/><br/>
 
+No começo da célula, a variável `c` recebe a consulta `customerData['Cust_Id'].value_counts().reset_index()`, que retorna um dataFrame com o id de cada cliente e quantas avaliações cada um fez. Em seguida, as colunas são renomeadas para `Cust_Id` e `Ratings_Qtd` usando `c.columns` e filtra-se os 5 melhores resultados com `c.head(5)`. Também são declaradas as listas `customerIds` responsável por armazenar os ids dos clientes , e `ratingsQtd`, responsável por armazenar a quantidade de avaliações feitas por cada cliente.<br/><br/>
 
+Então são realizados dois loops `for`, que vão realizar a iteração nas colunas `Rating_Qtd` e `Cust_Id` e inserindo nas listas `customerIds` e `ratingsQtd` , respectivamente. <br/><br/>
+
+No final da célula, é feita a impressão dos dados de ambas as listas.
