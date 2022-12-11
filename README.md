@@ -50,6 +50,7 @@ O banco de filmes, diferente do banco de avaliações, não tem um cabeçalho, e
 Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a propriedade `columns=["Movie_Id", "Movie_Title", "Release_Date"]`, que receberá um array de strings com os nomes dos cabeçalhos, em ordem.
 
 <h4>Segunda célula</h4>
+
 Aqui, será obtida a quantidade de filmes presentes no banco de dados. <br/><br/>
 Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `;` recebe `moviesData["Movie_Id"].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
 Ao final, imprime-se `moviesQtd`.
