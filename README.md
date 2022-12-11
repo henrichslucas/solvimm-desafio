@@ -6,6 +6,13 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
 
 ## Configurações para a execução
 
+### Pré-requisitos
+
+<ul>
+  <li><a href="https://www.python.org/downloads/">Python</a> (obrigatório)</li>
+  <li><a href="https://code.visualstudio.com/download">Visual Studio Code </a> (opcional)</li>
+</ul>
+
 Baixe o arquivo `5gFlix.ipynb` disponibilizado acima e o mova para uma pasta individual. 
 Em seguida, baixe os bancos de dados, disponíveis nos seguintes links:
 
@@ -18,6 +25,6 @@ O banco 1 contém informações sobre filmes, como ID, título e ano de lançame
 
 Baixados os bancos, *é vital movê-los para a pasta em que se localiza o arquivo jupyter baixado anteriormente*.
 
-Abra o arquivo 
+Abra o arquivo `5gFlix.ipynb`
 
 
