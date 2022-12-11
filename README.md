@@ -7,11 +7,14 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
 ### Pré-requisitos
 
 <ul>
-  <li><a href="https://www.python.org/downloads/">Python</a> (obrigatório)</li>
+  <li><a href="https://www.python.org/downloads/">Python 3.11.1</a> (obrigatório)</li>
   <li><a href="https://code.visualstudio.com/download">Visual Studio Code </a> (opcional)</li>
+  <li>Pandas 1.5.2 </li>
 </ul>
 
 <h4>Observações:</h4> 
+A versão disponível na Microsoft Store *não* é compatível com esse projeto. É recomendado o uso da última versão disponível no site oficial acima.
+Para instalar o Pandas, abra um console dentro do diretório desse projeto e execute o comando `pip install pandas`.
 
 ### Como executar
 
