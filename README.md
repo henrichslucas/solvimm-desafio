@@ -13,7 +13,7 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
 </ul>
 
 <h4>Observações:</h4> 
-A versão disponível na Microsoft Store *não* é compatível com esse projeto. É recomendado o uso da última versão disponível no site oficial acima.
+A versão disponível na Microsoft Store *não* é compatível com esse projeto. É recomendado o uso da última versão disponível no site oficial acima.<br/>
 Para instalar o Pandas, abra um console dentro do diretório desse projeto e execute o comando `pip install pandas`.
 
 ### Como executar
