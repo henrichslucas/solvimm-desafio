@@ -52,7 +52,7 @@ Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a pr
 <h4>Segunda célula</h4>
 
 Aqui, será obtida a quantidade de filmes presentes no banco de dados. <br/><br/>
-Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `;` recebe `moviesData["Movie_Id"].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
+Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `moviesQtd` recebe `moviesData["Movie_Id"].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
 Ao final, imprime-se `moviesQtd`.
 
 <h4>Terceira célula</h4>
@@ -68,7 +68,9 @@ Em seguida, a variável `ratingsMean` receberá `ratings['Rating'].mean()`, send
 
 Após isso, a variável `movieTitle` recebe o título do filme, utilizando a propriedade `loc`, também passando a condição `moviesData['Movie_Id'] == n`, retornando todas as linhas do banco de *filmes* em que o Id do filme seja igual ao valor do contador `n`. Para extrair apenas o nome do filme, o conteúdo da variavel `moviesTitle` é convertido em string utilizando `str(movieTitle)` e, em seguida, é feita uma manipulação de string para separar os outros caracteres indesejados utilizando o método `split`, que divide a string em outras strings, sendo possível selecionar o valor desejado por meio de indexação. <br/><br/>
 
-Ao final, é 
+Ao final de cada loop, os valores de `movieTitle` e `ratingsMean` sao inseridos na dict `bestMovies`, que agora é considerada uma lista de `tuple`. <br/><br/>
+
+No final da célula, cria-se a variável `orderedBestMovies`, que recebe `sorted(bestMovies)`, uma função que irá organizar as medias das avaliações, da maior para a menor. Essa função recebe parâmetros como o `reverse=True`, que inverte a ordem da ordenação, pois o default dessa função ordena de forma crescente. Finalmente, um loop `for` irá iterar a variável `orderedBestMovies[:5]`, sendo o valor entre os colchetes a quantidade de elementos a serem lidos, nesse caso, os 5 primeiros, e a cada iteração será impresso os valores da lista. 
 
 <h4>Quarta célula</h4>
 
