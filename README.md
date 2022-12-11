@@ -30,10 +30,10 @@ O banco 1 contém informações sobre filmes, como ID, título e ano de lançame
 
 Baixados os bancos, *é vital movê-los para a pasta em que se localiza o arquivo jupyter baixado anteriormente*.
 
-Abrindo o arquivo `5gFlix.ipynb` no *Visual Studio Code*, basta clicar em `Executar tudo` para compilar as células. Na primeira vez, será necessário selecionar o kernel, então apenas selecione a versão do python mais recente instalada em seu computador, quando a janela surgir. Feito isso, aguarde o processamento dos dados, e os resultados serão mostrados abaixo de cada célula.
+Abrindo o arquivo `5gFlix.ipynb` no *Visual Studio Code*, clique em `Executar tudo` para compilar as células. Na primeira vez, será necessário selecionar o kernel, então basta selecionar a versão do python instalada em seu computador, quando a janela surgir. Feito isso, aguarde o processamento dos dados, e os resultados serão mostrados abaixo de cada célula.
 
 ## Passo a passo
 
-
+Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido em *células*. 
 
 
