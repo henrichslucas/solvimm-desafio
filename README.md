@@ -78,11 +78,11 @@ No final da célula, cria-se a variável `orderedBestMovies`, que recebe `sorted
 
 Aqui, serão obtidos os 9 anos com menos frequência de lançamento de filmes <br/><br/>
 
-No começo dessa célula, a variável `releaseYears` receberá o resultado da consulta `moviesData['Release_Date'].value_counts().reset_index()`, que retornará um dataframe com todos os anos de lançamento e quantos filmes foram lançados em cada ano, sendo `moviesData['Release_Date']` responsável por selecionar os valores da coluna `Release_Date`, `value_counts()`, responsável por contar quantos itens da coluna tem o mesmo valor, e `reset_index()`, responsavel por criar converter o valor da consulta em um dataframe, além de criar a coluna de indexação. Essa consulta é feita no banco de *filmes*. Em seguida, as colunas serão renomeadas para `Year` e `Released_Movies` com `releaseYears.columns = ['Year', 'Released_Movies']`. Também serão declaradas as variáveis years, que será o array responsável por armazenar os anos, `moviesReleased`, array responsável por armazenar a quantidade filmes lançados em cada ano, e count, que será um auxiliar para indicar a ordem correta dos valores a serem inseridos nos arrays, além da variável leastYears que recebera `releaseYears.tail(9)`, que retorna um dataframe com os 9 ultimos valores da variável `releaseYears` .<br/><br/>
+No começo dessa célula, a variável `releaseYears` receberá o resultado da consulta `moviesData['Release_Date'].value_counts().reset_index()`, que retornará um dataframe com todos os anos de lançamento e quantos filmes foram lançados em cada ano, sendo `moviesData['Release_Date']` responsável por selecionar os valores da coluna `Release_Date`, `value_counts()`, responsável por contar quantos itens da coluna tem o mesmo valor, e `reset_index()`, responsavel por converter o valor da consulta em um dataframe, além de criar a coluna de indexação e ordenar os dados de forma decrescente. Essa consulta é feita no banco de *filmes*. Em seguida, as colunas serão renomeadas para `Year` e `Released_Movies` com `releaseYears.columns = ['Year', 'Released_Movies']`. Também serão declaradas as variáveis years, que será o array responsável por armazenar os anos, `moviesReleased`, array responsável por armazenar a quantidade filmes lançados em cada ano, e count, que será um auxiliar para indicar a ordem correta dos valores a serem inseridos nos arrays, além da variável leastYears que recebera `releaseYears.tail(9)`, que retorna um dataframe com os 9 ultimos valores da variável `releaseYears` .<br/><br/>
 
+Após isso, é realizado um duplo loop `for`, o primeiro passando a variável `item` e iterando `leastYears.values`, que retorna um array de arrays contendo os anos e a quantidade de lançamentos. O segundo for fará a iteração da variável `item`, passando a variável `i`.<br/><br/>
 
-
-
+Dentro dos dois laços, o valor existente em `i` será transformado em string com `str(i)` para a extração exclusiva do valor numérico, realizada com os `replace`. Durante o loop é implementada a condicional `if(count%2 == 1)`, ou seja, se o valor atual de `count` for ímpar, significa que é um ano, e se for par, significa que é a quantidade de filmes lançados naquele ano. Ao final do loop, count recebe a soma do próprio valor + 1. <br/><br/>
 
 
 <h4>Quinta célula</h4>
@@ -90,8 +90,6 @@ No começo dessa célula, a variável `releaseYears` receberá o resultado da co
 <h4>Sexta célula</h4>
 
 <h4>Sétima célula</h4>
-
-
 
 
 
