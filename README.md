@@ -34,6 +34,12 @@ Abrindo o arquivo `5gFlix.ipynb` no *Visual Studio Code*, clique em `Executar tu
 
 ## Passo a passo
 
-Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido em *células*. 
+### Raciocínio em cada célula
+
+Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido em *células*. Foram utilizadas 7 células ao todo, sendo a primeira para importar o pandas, ler os bancos de dados e definir as colunas do banco de filmes, enquanto as células seguintes são responsáveis por processar os dados e responder os entregáveis.
+
+
+
+
 
 
