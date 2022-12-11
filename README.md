@@ -8,7 +8,7 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
 
 <ul>
   <li><a href="https://www.python.org/downloads/">Python 3.11.1</a> (obrigatório)</li>
-  <li><a href="https://code.visualstudio.com/download">Visual Studio Code </a> (opcional)</li>
+  <li><a href="https://code.visualstudio.com/download">Visual Studio Code 1.74.0</a> (opcional)</li>
   <li>Pandas 1.5.2 </li>
 </ul>
 
