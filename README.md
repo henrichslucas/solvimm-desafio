@@ -42,7 +42,9 @@ Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido 
 
 O comando `import Pandas as pd` Pandas realiza a importação o Pandas, biblioteca que permitirá a leitura dos dados contidos nos arquivos CSV. <br/><br/>
 Em seguida é feita a leitura dos bancos com `pd.read_csv()`. Nessa essa função, os parâmetros principais são o nome do arquivo a ser lido, e os caracteres que delimitarão as colunas. <br/><br/>
+
 Para o banco de avaliações, o caracter `;` é o que separa os dados, então usa-se `sep=";"`, pois esse é o parâmetro que indica os caracteres de separação de dados.<br/><br/>
+
 O banco de filmes, diferente do banco de avaliações, não tem um cabeçalho, então é necessário indicar isso para a função com o parâmetro `header=None`, além do `sep=',|;'`. O parâmetro `engine='python'` permite a utilização de regex no parâmetro `sep`. <br/><br/>
 
 Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a propriedade `columns=["Movie_Id", "Movie_Title", "Release_Date"]`, que receberá um array de strings com os nomes dos cabeçalhos, em ordem.
@@ -54,8 +56,19 @@ Ao final, imprime-se `moviesQtd`.
 
 <h4>Terceira célula</h4>
 Aqui, serão obtidos os 5 filmes com a melhor media de avaliações. <br/><br/>
+
+De início, a variável `bestMovies` é inicializada como um dict, e nela serão inseridos os resultados finais. <br/><br/>
+
 Para isso, será necessário um loop `for` para iterar por ambos os bancos. Esse loop tem seu início e fim definidos por um `range(1,moviesQtd)`, ou seja, de 1 ate o número total de filmes disponíveis, que já foi calculado na célula acima. Nesse loop temos uma variável `n` que servirá de contador, aumentando de 1 em 1 a cada novo ciclo no loop.<br/><br/>
-Na variável `ratings` sera inserido o resultado da consulta `customerData.loc[customerData['Movie_Id'] == n]`, que retorna todas as linhas em que o Id do filme seja igual ao valor do contador `n` <br/><br/>.
+
+Na variável `ratings`, utilizando a propriedade `loc`, que permite passar condições para uma consulta, será inserido o resultado da consulta `customerData['Movie_Id'] == n`, que retorna todas as linhas do banco de *avaliações* em que o Id do filme seja igual ao valor do contador `n`. <br/><br/>
+
+Em seguida, a variável `ratingsMean` receberá `ratings['Rating'].mean()`, sendo o método `mean()` responsável por realizar a media aritmética dos valores da coluna `Rating`. <br/><br/>
+
+Após isso, a variável `movieTitle` recebe o título do filme, utilizando a propriedade `loc`, também passando a condição `moviesData['Movie_Id'] == n`, retornando todas as linhas do banco de *filmes* em que o Id do filme seja igual ao valor do contador `n`. Para extrair apenas o nome do filme, o conteúdo da variavel `moviesTitle` é convertido em string utilizando `str(movieTitle)` e, em seguida, é feita uma manipulação de string para separar os outros caracteres indesejados utilizando o método `split`, que divide a string em outras strings, sendo possível selecionar o valor desejado por meio de indexação. <br/><br/>
+
+Ao final, é 
+
 <h4>Quarta célula</h4>
 
 <h4>Quinta célula</h4>
