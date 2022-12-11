@@ -41,7 +41,9 @@ Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido 
 <h4>Primeira célula</h4>
 
 É necessário importar o Pandas, biblioteca que permitirá a leitura dos dados contidos nos arquivos CSV, com o comando `import Pandas as pd`.<br/>
-Em seguida é feita a leitura dos bancos com `pd.read_csv()`. Nessa essa função, os parâmetros principais são o nome do arquivo a ser lido, e os caracteres que delimitarão as colunas. Para o banco de avaliações, o caracter `;` é o que separa os dados, então basta definir `*delimiter=";"*`
+Em seguida é feita a leitura dos bancos com `pd.read_csv()`. Nessa essa função, os parâmetros principais são o nome do arquivo a ser lido, e os caracteres que delimitarão as colunas. <br/>
+Para o banco de avaliações, o caracter `;` é o que separa os dados, então basta definir `sep=";"`.<br/>
+O banco de filmes, diferente do banco de avaliações, não tem um cabeçalho, então é necessário indicar isso para a função com o parâmetro `header=None`
 
 
 
