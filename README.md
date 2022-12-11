@@ -53,9 +53,11 @@ Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a pr
 
 Aqui, será obtida a quantidade de filmes presentes no banco de dados. <br/><br/>
 Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `moviesQtd` recebe `moviesData["Movie_Id"].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
+
 Ao final, imprime-se `moviesQtd`.
 
 <h4>Terceira célula</h4>
+
 Aqui, serão obtidos os 5 filmes com a melhor media de avaliações. <br/><br/>
 
 De início, a variável `bestMovies` é inicializada como um dict, e nela serão inseridos os resultados finais. <br/><br/>
@@ -73,6 +75,13 @@ Ao final de cada loop, os valores de `movieTitle` e `ratingsMean` sao inseridos 
 No final da célula, cria-se a variável `orderedBestMovies`, que recebe `sorted(bestMovies)`, uma função que irá organizar as medias das avaliações, da maior para a menor. Essa função recebe parâmetros como o `reverse=True`, que inverte a ordem da ordenação, pois o default dessa função ordena de forma crescente. Finalmente, um loop `for` irá iterar a variável `orderedBestMovies[:5]`, sendo o valor entre os colchetes a quantidade de elementos a serem lidos, nesse caso, os 5 primeiros, e a cada iteração será impresso os valores da lista. 
 
 <h4>Quarta célula</h4>
+
+Aqui, serão obtidos os 9 anos com menos frequência de lançamento de filmes <br/><br/>
+
+
+
+
+
 
 <h4>Quinta célula</h4>
 
