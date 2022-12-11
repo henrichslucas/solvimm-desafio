@@ -51,7 +51,7 @@ Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a pr
 
 <h4>Segunda célula</h4>
 Aqui, será obtida a quantidade de filmes presentes no banco de dados. <br/><br/>
-Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `moviesQtd` recebe `moviesData['Movie_Id'].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
+Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável moviesQtd recebe `moviesData['Movie_Id'].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
 Ao final, imprime-se `moviesQtd`.
 
 <h4>Terceira célula</h4>
