@@ -36,7 +36,11 @@ Abrindo o arquivo `5gFlix.ipynb` no *Visual Studio Code*, clique em `Executar tu
 
 ### Raciocínio em cada célula
 
-Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido em *células*. Foram utilizadas 7 células ao todo, sendo a primeira para importar o pandas, ler os bancos de dados e definir as colunas do banco de filmes, enquanto as células seguintes são responsáveis por processar os dados e responder os entregáveis.
+Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido em *células*. Foram utilizadas 7 células ao todo.
+
+<h4>Primeira célula</h4>
+
+É necessário importar o Pandas, biblioteca que permitirá a leitura dos dados contidos nos arquivos CSV, com o comando `import Pandas as pd`.<br/>
 
 
 
