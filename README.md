@@ -49,10 +49,13 @@ Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a pr
 
 <h4>Segunda célula</h4>
 Aqui, será obtida a quantidade de filmes presentes no banco de dados. <br/><br/>
-Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `moviesQtd` recebe `moviesData['Movie_Id'].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.
+Como cada filme tem um id único, basta contar todos os ids. Para isso, a variável `moviesQtd` recebe `moviesData['Movie_Id'].size`, onde *Movie_Id* é o nome da coluna desejada e a propriedade `size` retorna a quantidade de elementos nessa coluna.<br/><br/>
+Ao final, imprime-se `moviesQtd`.
 
 <h4>Terceira célula</h4>
-
+Aqui, serão obtidos os 5 filmes com a melhor media de avaliações. <br/><br/>
+Para isso, será necessário um loop `for` para iterar por ambos os bancos. Esse loop tem seu início e fim definidos por um `range(1,moviesQtd)`, ou seja, de 1 ate o número total de filmes disponíveis, que já foi calculado na célula acima. Nesse loop temos uma variável `n` que servirá de contador, aumentando de 1 em 1 a cada novo ciclo no loop.<br/><br/>
+Na variável `ratings` sera inserido o resultado da consulta `customerData.loc[customerData['Movie_Id'] == n]`, que retorna todas as linhas em que o Id do filme seja igual ao valor do contador `n` <br/><br/>.
 <h4>Quarta célula</h4>
 
 <h4>Quinta célula</h4>
