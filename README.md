@@ -11,6 +11,10 @@ Esse projeto tem como objetivo responder os entregáveis indicados no escopo do 
   <li><a href="https://code.visualstudio.com/download">Visual Studio Code </a> (opcional)</li>
 </ul>
 
+<strong>Observações:</strong> 
+
+### Como executar
+
 Baixe o arquivo `5gFlix.ipynb` disponibilizado acima e o mova para uma pasta individual. 
 Em seguida, baixe os bancos de dados, disponíveis nos seguintes links:
 
