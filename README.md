@@ -78,7 +78,7 @@ No final da célula, cria-se a variável `orderedBestMovies`, que recebe `sorted
 
 Aqui, serão obtidos os 9 anos com menos frequência de lançamento de filmes <br/><br/>
 
-
+No começo dessa célula, a variável `releaseYears` receberá o resultado da consulta `moviesData['Release_Date'].value_counts().reset_index()`, que retornará um dataframe com todos os anos de lançamento e quantos filmes foram lançados em cada ano, sendo `moviesData['Release_Date']` responsável por selecionar os valores da coluna `Release_Date`, `value_counts()`, responsável por contar quantos itens da coluna tem o mesmo valor, e `reset_index(), responsavel por criar converter o valor da consulta em um dataframe, além de criar a coluna de indexação. Essa consulta é feita no banco de *filmes*. Em seguida, as colunas serão renomeadas para 'Year' e 'Released_Movies' com `releaseYears.columns = ['Year', 'Released_Movies']`
 
 
 
