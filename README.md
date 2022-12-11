@@ -41,9 +41,9 @@ Esse projeto foi desenvolvido no Jupyter Notebook, sendo assim, ele é dividido 
 <h4>Primeira célula</h4>
 
 O comando `import Pandas as pd` Pandas realiza a importação o Pandas, biblioteca que permitirá a leitura dos dados contidos nos arquivos CSV. <br/><br/>
-Em seguida é feita a leitura dos bancos com `pd.read_csv()`. Nessa essa função, os parâmetros principais são o nome do arquivo a ser lido, e os caracteres que delimitarão as colunas. <br/>
-Para o banco de avaliações, o caracter `;` é o que separa os dados, então basta definir `sep=";"`.<br/>
-O banco de filmes, diferente do banco de avaliações, não tem um cabeçalho, então é necessário indicar isso para a função com o parâmetro `header=None`, além do `sep=',|;'` para indicar os caracteres de separação de dados. O parâmetro `engine='python'` permite a utilização de regex no parâmetro `sep` <br/>
+Em seguida é feita a leitura dos bancos com `pd.read_csv()`. Nessa essa função, os parâmetros principais são o nome do arquivo a ser lido, e os caracteres que delimitarão as colunas. <br/><br/>
+Para o banco de avaliações, o caracter `;` é o que separa os dados, então basta definir `sep=";"`.<br/><br/>
+O banco de filmes, diferente do banco de avaliações, não tem um cabeçalho, então é necessário indicar isso para a função com o parâmetro `header=None`, além do `sep=',|;'` para indicar os caracteres de separação de dados. O parâmetro `engine='python'` permite a utilização de regex no parâmetro `sep` <br/><br/>
 
 Ao final, são definidos alguns cabeçalhos para facilitar as consultas com a propriedade `columns=["Movie_Id", "Movie_Title", "Release_Date"]`, que receberá um array de strings com os nomes dos cabeçalhos, em ordem.
 
